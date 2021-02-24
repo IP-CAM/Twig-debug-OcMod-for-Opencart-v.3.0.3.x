@@ -4,7 +4,8 @@ Modification activates the built-in debug function in TWIG.
 ! [TWIG-DEBUG] (twig_dump.png)
 
 ## Description
-The dump feature displays information about the template variable. This is mainly useful for debugging a template that does not behave properly, analyzing its variables:
+The dump feature displays information about the template variable. 
+This is mainly useful for debugging a template that does not behave properly, analyzing its variables:
 `` `twig
 {{dump (user)}}
 `` ``
@@ -16,7 +17,8 @@ In the context of HTML wrap the output by a preliminary tag to read it easier to
 </ pre>
 `` ``
 
-> Using a pre-tag is not required if Xdebug is enabled and the HTML_ERRORS is enabled; As a bonus, the output is also better with Xdebug included.
+> Using a pre-tag is not required if Xdebug is enabled and the HTML_ERRORS 
+> is enabled; As a bonus, the output is also better with Xdebug included.
 
 You can debug a few variables by passing them as additional arguments:
 `` `twig
