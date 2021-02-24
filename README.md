@@ -1,37 +1,38 @@
-# twig-debug
-Модификация активирует встроенную функцию отладки в Twig.
+# TWIG-DEBUG
+Modification activates the built-in debug function in TWIG.
 
-![twig-debug](twig_dump.png)
+! [TWIG-DEBUG] (twig_dump.png)
 
-## Описание
-Функция dump выводит информацию о переменной шаблона. Это в основном полезно для отладки шаблона, который не ведет себя должным образом, анализируя его переменные:
-```twig
-{{ dump(user) }}
-```
+## Description
+The dump feature displays information about the template variable. This is mainly useful for debugging a template that does not behave properly, analyzing its variables:
+`` `twig
+{{dump (user)}}
+`` ``
 
-В контексте HTML оберните вывод предварительным тегом, чтобы его было легче читать:
-```twig
-<pre>
-    {{ dump(user) }}
-</pre>
-```
+In the context of HTML wrap the output by a preliminary tag to read it easier to read:
+`` `twig
+<Pre >.
+    {{dump (user)}}
+</ pre>
+`` ``
 
-> Использование предварительного тега не требуется, если включен XDebug и включен html_errors; в качестве бонуса, выход также лучше с включенным XDebug.
+> Using a pre-tag is not required if Xdebug is enabled and the HTML_ERRORS is enabled; As a bonus, the output is also better with Xdebug included.
 
-Вы можете отлаживать несколько переменных, передавая их в качестве дополнительных аргументов:
-```twig
-{{ dump(user, categories) }}
-```
+You can debug a few variables by passing them as additional arguments:
+`` `twig
+{{DUMP (User, Categories)}}
+`` ``
 
-Если Вы не передадите какое-либо значение, все переменные из текущего контекста будут сброшены:
-```twig
-{{ dump() }}
-```
-Внутренне Twig использует функцию PHP var_dump.
+If you do not give any value, all variables from the current context will be reset:
+`` `twig
+{{dump ()}}
+`` ``
+Internally, TWIG uses the PHP VAR_DUMP function.
 
-### Совместимость
-- OpenCart 3.0.3.x
+### compatibility
+- OpenCart 3.0.3.x.
 
-## Ссылки
-- [Ресурс на форуме](https://forum.opencart.name/resources/54/)
-- [dump - Documentation - Twig](https://twig.symfony.com/doc/3.x/functions/dump.html)
+## Links
+- [Forum resource] (https://forum.opencart.name/resources/54/)
+- [DUMP - Documentation - TWIG] (https://twig.symfony.com/doc/3.x/functions/dump.html)
+- 
