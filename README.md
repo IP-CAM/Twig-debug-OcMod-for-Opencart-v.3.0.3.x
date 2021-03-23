@@ -37,4 +37,3 @@ Internally, TWIG uses the PHP VAR_DUMP function.
 ## Links
 - [Forum resource] (https://forum.opencart.name/resources/54/)
 - [DUMP - Documentation - TWIG] (https://twig.symfony.com/doc/3.x/functions/dump.html)
-- 
